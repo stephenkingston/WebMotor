@@ -36,7 +36,11 @@ document.body.append(renderer.domElement);
 
 /* 3D Models */
 const loader = new GLTFLoader()
-loader.load("../docs/models/motor.gltf", (model) => {
+
+/* GitHub link: https://raw.githubusercontent.com/stephenkingston/WebMotor/master/docs/models/motor.gltf */
+/* Local link to 3D file - ../docs/models/motor.gltf */
+
+loader.load("https://raw.githubusercontent.com/stephenkingston/WebMotor/master/docs/models/motor.gltf", (model) => {
                 model.scene.traverse((node) =>{
                     if (node instanceof THREE.Mesh)
                     {
