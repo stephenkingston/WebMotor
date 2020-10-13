@@ -29,6 +29,7 @@ renderer.gammaOutput = true;
 renderer.gammaFactor = 2.2;
 
 let orbCon = new OrbitControls(camera, renderer.domElement);
+orbCon.maxPolarAngle = Math.PI/2.4;
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.append(renderer.domElement);
@@ -43,7 +44,6 @@ loader.load("../webpage/models/motor.gltf", (model) => {
                     }
                 })
                 scene.add(model.scene)
-                scene.add(model.asset)
 });
 
 /* Lighting */
