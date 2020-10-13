@@ -36,7 +36,7 @@ document.body.append(renderer.domElement);
 
 /* 3D Models */
 const loader = new GLTFLoader()
-loader.load("../webpage/models/motor.gltf", (model) => {
+loader.load("../docs/models/motor.gltf", (model) => {
                 model.scene.traverse((node) =>{
                     if (node instanceof THREE.Mesh)
                     {
