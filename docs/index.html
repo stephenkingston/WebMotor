@@ -3,11 +3,26 @@
 <link rel=stylesheet href="css/mainPage.css" >
 <head>
     <meta charset="UTF-8">
-    <title>Browser-based Stepper Motor Control</title>
+    <title>WebMotor</title>
+    <link rel = "icon" href =
+            "https://img.icons8.com/color/344/stepper-motor.png"
+            type = "image/x-icon">
     <script src="js/3js-lib/three.js"></script>
-    <script type="module" src="js/util.js"></script>
 </head>
 <body>
-    <script type="module" src="js/3d.js"></script>
+    <div id="parent">
+        <script type="module" src="js/3d.js"></script>
+        <script type="module" src="js/util.js"></script>
+        <div class="guide">Right click + Drag to pan<br>
+        Left click + Drag to rotate<br>
+        Scroll to zoom<br></div>
+
+        <div id="control-panel">
+            <h2>CONTROLS</h2>
+            <div id="rotation-slider" class="slider-control">
+                <div>Rotation Angle</div><input type="range" min="1" max="360" value="1" class="slider-square" id="rotationSlider">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

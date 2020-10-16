@@ -1,0 +1,8 @@
+{
+  "name": "3js_stepper_motor",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@google-cloud/speech": "^4.1.3"
+  }
+}
